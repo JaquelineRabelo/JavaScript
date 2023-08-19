@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopos Variaveis</title>
+
+
+    <script>
+
+        /*Em JavaScript:
+
+Escopo Global: Variáveis e funções que estão "fora" de qualquer função. Todos podem acessá-las.
+
+Escopo Local: Variáveis e funções que estão "dentro" de uma função. Só a própria função pode ver e usar essas coisas.
+
+Escopo de Bloco: Variáveis que são declaradas dentro de blocos de código (como dentro de if, for ou while). Elas só podem ser vistas dentro desses blocos.
+
+Isso ajuda a manter as coisas organizadas e impede que brinquedos (ou variáveis) se misturem ou sejam usados por pessoas erradas.*/
+
+       //O js existe 3 escopos: global, função e o conteudo.
+
+
+
+
+        var serie = 'friends'
+
+            //escopo bloco
+        if (true) {
+            var serie2 = 'Game of Thrones'
+            document.write(serie)
+        }
+
+        //escopo global
+
+        document.write('<br/>')
+        document.write(serie2)
+
+
+
+        document.write('<br/>')
+
+        function x() {
+            var serie3 = 'The Walking Dead'
+            document.write(serie)
+            document.write('<br/>')
+            document.write(serie2)
+        }
+
+        x()
+
+        /* Variáveis criadas no escopo global podem ser acessadas no escopo de funções e de blocos de códigos, como o if.
+
+        Variáveis criadas dentro das funções só podem ser acessadas dentro do bloco da função ao qual foi criada, não podendo ser acessada fora do bloco da função.
+    */
+
+        document.write(serie3)
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+    
+    
+</body>
+</html>

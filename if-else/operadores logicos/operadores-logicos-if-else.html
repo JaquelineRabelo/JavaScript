@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos com if e else</title>
+
+    <script>
+//true && true && false = false ( será verdadeiro de todoas as expressões forem verdadeiras)
+/*if ( 2 == 2 && 3 >= 1 && 'a' == 'b') {
+document.write('Verdadeiro')
+} else {
+    document.write('false')
+}*/
+
+//true  true || false = true (pelo menos uma verdadeira, será tudo verdadeiro)
+/*if ( 2 == 2 || 3 >= 1 || 'a' == 'b') {
+document.write('Verdadeiro')
+} else {
+    document.write('falso')
+}*/
+
+//false = false 
+/*Neste código, estamos verificando se a afirmação "2 é igual a 4" é falsa. A parte 2 == 4 compara se o número 2 é igual ao número 4. Como sabemos que 2 não é igual a 4, essa comparação é falsa.
+
+A comparação !(2 == 4) é verdadeira, porque estamos dizendo "não é verdade que 2 é igual a 4". Como é realmente o caso de que 2 não é igual a 4, o bloco de código dentro do if será executado, e veremos a mensagem "Verdadeiro" na saída.*/
+/*
+if (!( 2 == 4)) {
+document.write('Verdadeiro')
+} else {
+    document.write('falso')
+}*/
+
+//Exemplo prático
+
+// variaveis de parâmetros
+
+var nota = prompt('Digite a nota do aluno:')
+var faltas = prompt('Digite a quantidade de faltas:')
+
+var media = 7
+var faltas_maximas = 15
+
+
+if (nota >= media && faltas <= faltas_maximas) 
+{
+    document.write('Aprovado')
+
+}  else {
+    
+    document.write('Reprovado')
+}
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com janela</title>
+
+<script>
+
+
+/*onfocus
+onblur
+onchange
+
+onfocus:
+O evento onfocus ocorre quando um elemento ganha o foco. Em outras palavras, ele é acionado quando você "seleciona" ou "clica" em um elemento, como um campo de entrada (input) ou uma área de texto. Por exemplo, quando você clica em um campo de entrada, ele ganha o foco e o evento onfocus é disparado. Isso é frequentemente usado para destacar visualmente o elemento que está sendo focado ou para realizar ações específicas quando o usuário interage com esse elemento.
+
+onblur:
+O evento onblur é o oposto do onfocus. Ele ocorre quando um elemento perde o foco, ou seja, quando você sai do elemento depois de interagir com ele. Por exemplo, quando você digita algo em um campo de entrada e, em seguida, clica em outro lugar, o evento onblur é disparado. Isso é frequentemente usado para validar os dados inseridos ou fazer alguma ação após o usuário terminar de interagir com um elemento.
+
+onchange:
+O evento onchange é acionado quando o valor de um elemento muda e o elemento perde o foco. Ele é frequentemente usado em campos de entrada (input) e menus de seleção (select). Por exemplo, se você selecionar uma opção diferente em um menu suspenso (select) e, em seguida, clicar em outro lugar, o evento onchange é disparado. Isso é útil quando você deseja executar ações específicas sempre que o valor de um elemento for alterado.*/
+
+
+</script>
+
+
+
+
+</head>
+<body>
+
+
+<input onfocus="console.log('recebeu o doco')" onblur="console.log('perdeu o foco')" >
+
+<select onchange="console.log('Estado foi modificado')">
+
+    <option>-- Selecione --</option>
+    <option value="1">Primeira opção</option>
+    <option value="2">Segunda opção</option>
+
+</select>
+
+</body>
+</html>

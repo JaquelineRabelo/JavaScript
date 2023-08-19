@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação Estilos de Elementos</title>
+
+    <script>
+
+        /*Dentro da tag <script>, você definiu uma função chamada modificaEstilo(). Vou explicar o que ela faz:
+
+function modificaEstilo(corDeFundo): Aqui, você está definindo uma função chamada modificaEstilo que tem um parâmetro corDeFundo. Este parâmetro será usado para definir a cor de fundo do elemento "quadrado".
+
+document.getElementById('quadrado').style.background = corDeFundo;: Aqui, você está pegando o elemento com o id "quadrado" usando o document.getElementById(). Em seguida, está ajustando o estilo de fundo do elemento para a cor fornecida pelo parâmetro corDeFundo.*/modificaEstilo
+
+        function modificaEstilo(corDeFundo, l, a) { 
+            
+          document.getElementById('quadrado').style.background = corDeFundo
+
+          document.getElementById('quadrado').style.width = l
+
+          document.getElementById('quadrado').style.height = a
+        
+        }
+       
+    </script>
+</head>
+<body>
+
+    <h3>Manipulando estilos</h3>
+
+    <!--Aqui tem uma série de botões e um título. Cada botão chama a função modificaEstilo() quando é clicado. Através do atributo onclick, você passa diferentes cores (códigos de cor em formato hexadecimal) como argumentos para a função, o que altera a cor de fundo do elemento "quadrado" para a cor correspondente.-->
+
+    <button type="button" onclick="modificaEstilo('#FF0000', '200px')"> Vermelho </button>
+    <button type="button" onclick="modificaEstilo('#00FF00', '150px','20px')"> Verde </button>
+    <button type="button" onclick="modificaEstilo('#0000FF', '150px', '200px')"> Azul </button>
+    <hr/>
+
+  <!--Este é o elemento "quadrado" que será manipulado pelos botões. Ele é uma <div> com uma borda preta de 1 pixel, largura e altura de 100 pixels. Através do atributo id, você pode selecionar este elemento em JavaScript e modificar seu estilo.-->  
+
+    <div style="border: solid 1px #000; width: 100px; height: 100px;" id="quadrado"> </div>
+
+
+    <!--No geral, este exercício ilustra como você pode usar JavaScript para manipular estilos de elementos HTML. Os botões permitem que os usuários escolham diferentes cores para a cor de fundo do elemento "quadrado". Essa abordagem é uma forma simples de demonstrar como o JavaScript pode interagir dinamicamente com o estilo dos elementos de uma página da web.-->
+    
+</body>
+</html>

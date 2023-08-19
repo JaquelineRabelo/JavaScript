@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Introdução</title>
+
+
+    <script>
+
+        //função void - (não retorna nenhum parametro no site)
+
+        //função retorno - (precisa usar um documet.write por exemplo)
+
+
+        function calcularAreaTerreno ( largura, comprimento) {
+
+            //lógica 
+            var area = largura * comprimento
+            
+            /*document.write('O terreno possui ' + area + ' metros quadrados. ')*/
+
+            return area 
+        }
+        var largura = parseFloat (largura)
+        var comprimento = parseFloat (comprimento)
+
+        var largura = prompt ('Digite a largura do terreno em metros')
+        var comprimento = prompt ('Digite o comprimento do terreno')
+
+       var area = calcularAreaTerreno (largura, comprimento)
+
+        document.write('O terreno possui ' + area + ' metros quadrados.')
+
+
+        /*
+        Informações de Parâmetros:
+
+        function soma(a,b) {
+            return a + b 
+
+        }
+
+        console.log(soma(7, 7))
+        
+        console.log(soma(7,7,9,10)) //como existem dois parametros na função o js considera apenas os dois primeiros, sendo a soma 14 igual o primeiro calculo, No entanto é possível adicionar quantos parametros forem necessários.
+
+        */
+
+    </script>
+</head>
+<body>
+
+    
+    
+</body>
+</html>

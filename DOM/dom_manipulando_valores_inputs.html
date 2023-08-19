@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando valores inputs</title>
+
+    <!--"Manipulando valores inputs" significa que o JavaScript pode mudar as coisas que você escreve em campos de texto ou seleciona em menus em um site. Pensa nisso como se estivesse mudando o canal de TV ou ajustando o volume do rádio, mas em um site.
+
+    Por exemplo, se você tem um campo onde digita o seu nome, o JavaScript pode ler o que você digitou e usar essa informação para fazer algo, como te saudar pelo nome quando clica em um botão.
+
+    Resumindo, o DOM permite que o JavaScript mude as coisas em uma página da web, como textos que você escreve ou escolhas que faz, para que o site possa responder do jeito que você quer! 🌟-->
+
+    <script>
+
+
+        /*Este exercício serve para demonstrar como manipular valores de entrada em um campo de texto em uma página web usando JavaScript e como categorizar esses valores como letras ou números*/
+
+        //*Este código HTML e JavaScript cria uma página da web que permite digitar um caractere (letra, número ou outro) em um campo de texto e, em seguida, categoriza esse caractere como uma letra ou número*/
+/*-------------------------------------------------------------------*/
+        //nesta função iremos recuperar os caracter digitados através do DOM 
+        function distribuiCaracter() {
+            //selecionar o valor digitado
+          //  console.log(document.getElementById('entrada').value)
+        
+    var caracter = (document.getElementById('entrada').value)
+
+         //limpar o campo de digitação
+    document.getElementById('entrada') .value = "" 
+     
+    //limpar espaços em branco na estremidades da string
+    caracter.trim()
+    switch(caracter) {
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+            //adicionar o caracter no campo referente a números
+            document.getElementById('apenas_numeros').value += caracter
+            break;
+            default:
+
+            document.getElementById('apenas_letras').value += caracter
+                //adicionar o caracter no campo referente a letras
+    }
+        }
+    </script>
+    
+</head>
+<body>
+
+<input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()"
+id="entrada"/>
+
+<hr />
+
+<span>Letras:</span>
+<input type="text" disabled="disabled" id="apenas_letras" />
+
+
+<span>Números</span>
+<input type="text" disabled="disabled" id="apenas_numeros" />
+    
+</body>
+</html>
+
+
+
+

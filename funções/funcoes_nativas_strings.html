@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Nativas para manipular strings</title>
+
+
+    <script>
+
+       var nome = 'Jaqueline Santos'
+
+        //propriedade length (retorna a quantidade de caractere)
+
+        //length saber quantos caracteres tem o texto, incluindo os
+        document.write('Jaqueline Santos'.length)
+        document.write('<br>')
+
+        //localizar através do número qual é a letra
+        document.write('Jaqueline Santos'.charAt(2))
+        document.write('<br>')
+
+        //localizar em qual número esta a letra 'e' por ex.
+        document.write(nome.indexOf('e'))
+        document.write('<br>')
+
+       //trocar o nome de santos para rabelo
+        document.write(nome.replace('Santos', 'Rabelo'))
+        document.write('<br>')
+
+            //procurar as letrar que estão entre 6 e 4
+        document.write(nome.substr(6, 4))
+        document.write('<br>')
+
+        ////deixa todas as letras maiusculas
+        document.write(nome.toLocaleLowerCase())
+        document.write('<br>')
+
+       //deixa todas as letras minusculas
+        document.write(nome.toLocaleUpperCase())
+        document.write('<br>')
+
+            //trim é para remover os espaços
+        document.write('-' + nome.trim() + '-')
+        document.write('<br>')
+
+    </script>
+</head>
+<body>
+
+    
+    
+</body>
+</html>

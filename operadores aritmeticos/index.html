@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+
+<script>
+
+var num1 = prompt('Digite o valor de num1')
+var num2 = prompt('Digite o valor de num2')
+
+num1 = parseInt(num1) //usar o parseInt quando for necessário usar o prompt, por causa do srintg.
+num2 = parseInt(num2)
+
+//*Colocar o nºs entre () parenteses fazem os números somaram para não haver uma concatenação, ou seja, junção e não soma.*/
+/*
+//soma
+document.write('A soma entre '+num1+' e '+num2+' é:' + (num1 + num2)  + '<br/>')
+
+//subtração
+document.write('A  subtração entre '+num1+' e '+num2+' é:' + (num1 - num2) +  '<br/>')
+
+//multiplicação
+document.write('A  multiplicação entre '+num1+' e '+num2+' é:' + (num1 * num2) +  '<br/>')
+
+//divisão
+document.write('A  divisão entre '+num1+' e '+num2+' é:' + (num1 / num2) +  '<br/>')
+
+
+//módulo
+document.write('O módulo entre '+num1+' e '+num2+' é:' + (num1 % num2) +  '<br/>')
+
+
+/*incremento - pré
+document.write('O incremento pré de '+num1+' é:' + (++num1) +  '<br/>')
+
+//incremento - pós
+document.write('O incremento pós de '+num1+' é:' + (num1++) +  '<br/>')
+document.write(num1 + '<br/>')
+
+//decremento
+document.write('O decremento de '+num1+' é:' + (num1--) + '<br/>')
+document.write(num1)
+
+
+
+
+-------------------------------------------
+*/
+
+
+//Operadores aritméticos na atribuição de valores (dica para deixar os codigos mais enxutos.)
+/*
+var teste = 'Olá '
+
+
+//teste = teste + 5
+//teste += 5
+//teste -= 5
+//teste *= 5
+//teste /=5
+//teste%= 3
+teste += 'Jorge' //concatenção de strings.
+document.write(teste)
+*/
+
+//é importante observar as Precências dos operadores aritméticos
+
+document.write(11 + 5 - 5 * 2 / 2)
+
+//1º o js vai procurar primeiros a multiplicação e divisão.
+// 2º e depois a  soma e subtração ficaram em segundo plano na operação aritmética.
+
+
+</script>
+
+<body>
+    
+</body>
+</html>

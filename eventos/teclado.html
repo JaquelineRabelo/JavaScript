@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com teclado</title>
+
+<script>
+
+function acao1() {
+    alert('evento disparado')
+}
+
+/*onkeydown: Este evento acontece no exato momento em que você pressiona uma tecla no teclado, ou seja, quando você empurra a tecla para baixo. É útil para ações que precisam acontecer no início da pressão da tecla, como ativar uma função quando a tecla é pressionada.
+
+onkeyup: Esse evento ocorre no momento em que você solta uma tecla que estava pressionada. Ele é acionado quando você libera a tecla após tê-la pressionado. É útil para ações que precisam ocorrer quando você solta uma tecla, como verificar o valor de um campo de texto após a edição.
+
+onkeypress: Este evento ocorre enquanto você mantém uma tecla pressionada. Ele é acionado repetidamente enquanto a tecla permanece pressionada. No entanto, é importante observar que esse evento nem sempre é disparado para todas as teclas, especialmente para teclas como Shift, Ctrl, Alt, etc. É útil para ações contínuas que devem ocorrer enquanto uma tecla está pressionada.*/
+
+
+
+</script>
+
+
+</head>
+<body>
+
+<!--input onkeydown="acao1()" type="text" />-->
+
+<!--<input onkeyup="acao1()" type="text"/>-->
+
+<input onkeypress="acao1()" type="text"/>
+</body>
+</html>

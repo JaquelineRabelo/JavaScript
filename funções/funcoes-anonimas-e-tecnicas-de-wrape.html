@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Anonimas e Técnicas de Wrapper</title>
+
+<!--Funções Anônimas e Wrappers:
+Uma função anônima pode ser usada como um "wrapper" em certos contextos. Lembra-se de que uma função anônima é um pedaço de código que você não nomeia, mas pode usar onde for necessário? Bem, essa característica torna as funções anônimas úteis para criar wrappers.
+
+Pense em uma situação em que você deseja adicionar alguma funcionalidade extra a uma função existente, como registrar informações toda vez que a função é chamada. Você pode criar uma função anônima (sem nome) que envolve a função original, adicionando o código extra que você precisa. Essa função anônima atua como um "wrapper" em torno da função original.
+
+Vamos usar um exemplo:
+
+Suponha que você tem a função somar(a, b) que simplesmente retorna a soma de dois números. Agora, você quer adicionar a funcionalidade de registrar cada vez que a função somar é chamada. Você pode criar uma função anônima que envolve a somar, registrando informações antes e depois de chamar a função original. Essa função anônima funciona como um "wrapper" em torno da função somar.-->
+    <script>
+
+       var exibirSaudacao = function(nome) {
+
+            document.write('Olá ' + nome + ' tudo bem?')
+
+        }
+
+        exibirSaudacao ('Jaqueline')
+
+       
+
+    </script>
+</head>
+<body>
+
+    
+    
+</body>
+</html>
