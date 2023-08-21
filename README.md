@@ -25,7 +25,7 @@ Cada seção estará organizada em pastas correspondentes, contendo exemplos de 
 
 Contribuições são bem-vindas! Se você encontrar erros, tiver sugestões ou quiser adicionar mais conteúdo, fique à vontade para abrir um *issue* ou enviar um *pull request*. 
 
-## 📚 Recursos Adicionais e Dcoumentação 
+## 📚 Recursos Adicionais e Documentação 
 
 - Documentação oficial do JavaScript: [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - Tutoriais e cursos interativos: [freeCodeCamp](https://www.freecodecamp.org/), [Codecademy](https://www.codecademy.com/), [Coursera](https://www.coursera.org/)
